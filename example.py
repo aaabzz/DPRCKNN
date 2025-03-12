@@ -6,5 +6,5 @@ from colormap import color_mapping
 
 
 data = np.loadtxt('jain.txt', dtype=np.float32, delimiter='\t')
-dprc = DensityPeakRegionCluster(n_clusters=2, DPR_visualizaiton=True, cluster_visualization=True)
-labels = dprc.fit(data)
+dprc = DensityPeakRegionCluster(n_clusters=2, DPR_visualization=True, cluster_visualization=True)
+dprc.fit(data)
